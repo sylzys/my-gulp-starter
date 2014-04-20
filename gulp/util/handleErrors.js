@@ -2,6 +2,7 @@ var notify = require("gulp-notify");
 
 module.exports = function() {
 	// Send error to notification center with gulp-notify
+	console.log("msg");
 	notify.onError({
 		title: "Compile Error",
 		message: "<%= error.message %>"
