@@ -20,7 +20,7 @@ Use Homebrew:
 ```
 brew install node
 ```
-Or download and install from [Nodejs.org](http://nodejs.org/download/).
+Or ownload and install from [Nodejs.org](http://nodejs.org/download/).
 
 ### Install Gulp Globally
 Gulp must be installed globally in order to use the command line tools. *You may need to use `sudo`*
