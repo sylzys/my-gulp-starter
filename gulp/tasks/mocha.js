@@ -4,6 +4,6 @@ var handleErrors = require('../util/handleErrors');
 
 gulp.task('mocha', function() {
     return gulp.src(['test/test_*.js'], { read: false })
-        .pipe(mocha({ reporter: 'list' }))
+        .pipe(mocha({ reporter: 'spec' }))
         .on('error', handleErrors);
 });

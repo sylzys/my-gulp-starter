@@ -6,12 +6,12 @@ var source       = require('vinyl-source-stream');
 
 gulp.task('browserify', function(){
 	return browserify({
-			entries: ['./src/javascript/app.coffee'],
-			extensions: ['.coffee', '.hbs']
+			entries: ['./src/js/main.js']
+			//extensions: ['.coffee', '.hbs']
 		})
 		.bundle({debug: true})
 		.on('error', handleErrors)
-		.pipe(source('app.js'))
+		.pipe(source('main.js'))
 		.pipe(gulp.dest('./build/'))
 		.pipe(livereload());
 });
