@@ -6,7 +6,7 @@ gulp.task('open', function() {
 
 	var options = {
 		url: "http://localhost:" + config.port,
-		app: "firefox"
+		app: "google chrome"
 	};
 
 	return gulp.src("./index.html").pipe(open("", options));

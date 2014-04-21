@@ -49,8 +49,12 @@ gulp build
 If you run "gulp" and if you're on OS X with Chrome installed, a window will open displaying the index.html page. You can easily replace it with "firefox" in gulp/tasks/open.js file.
 If not, open your favorite browser and open http://localhost:8080 to view the index page.
 
+### Live Relaod
+In order to get LiveReload working, you'll need to download and install the plugin for the browser of your choice. Have a look at [LiveReload.com browser extensions](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-)
+
 ### TODO
 
-- Configure browserify
+<del>Configure browserify</del>
+
 - Concatenate JS files
 - Add error in notification center for JS Lint
