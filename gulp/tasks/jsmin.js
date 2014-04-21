@@ -2,9 +2,9 @@ var gulp = require('gulp');
 var jsmin = require('gulp-jsmin');
 var rename = require('gulp-rename');
 
-gulp.task('jsmin', function () {
-    gulp.src('src/**/*.js')
+gulp.task('jsmin', ['browserify'], function () {
+    gulp.src('build/js/*.js')
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('./build'));
+        .pipe(gulp.dest('./build/js'));
 });

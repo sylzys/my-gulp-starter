@@ -12,6 +12,6 @@ gulp.task('browserify', function(){
 		.bundle({debug: true})
 		.on('error', handleErrors)
 		.pipe(source('main.js'))
-		.pipe(gulp.dest('./build/'))
+		.pipe(gulp.dest('./build/js/'))
 		.pipe(livereload());
 });
